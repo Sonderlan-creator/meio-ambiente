@@ -1,0 +1,441 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-shadow: rgba(0, 0, 0, 0.2) 2px 2px 1px;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, #e8f5e9, #f0f9f1);
+    color: #2e2e2e;
+    line-height: 1.6;
+  }
+  
+  /* Hero */
+  .hero {
+    background: url('https://images.unsplash.com/photo-1470770841072-f978cf4d019e') center/cover no-repeat;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+  }
+  
+  .hero::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 0; left: 0; width: 100%; height: 100%;
+  }
+  
+  .hero-content {
+    color: #fff;
+    z-index: 1;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .hero p {
+    font-size: 1.3rem;
+  }
+  
+  /* Seções */
+  main {
+    padding: 2rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    color: #2e7d32;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .intro p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+  }
+  
+  /* Cards */
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+  
+  .card {
+    background: #ffffffdd;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+  
+  .card:hover {
+    transform: translateY(-8px);
+  }
+  
+  .card i {
+    font-size: 2rem;
+    color: #43a047;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Galeria */
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .gallery img {
+    width: 300px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Curiosidades */
+  .curiosidades {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f0f8ff;
+    border-radius: 10px;
+    margin: 2rem 0;
+  }
+  
+  .curiosidades ul {
+    max-width: 800px;
+    margin: auto;
+    list-style: none;
+    padding: 1rem;
+  }
+  
+  .curiosidades li {
+    background-color: #e8f5e9;
+    padding: 1rem;
+    margin-bottom: 0.7rem;
+    border-radius: 8px;
+    transition: 0.3s;
+  }
+  
+  .curiosidades li:hover {
+    background-color: #c8e6c9;
+  }
+  
+  .curiosidades-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .curiosidade-item {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: visible; /* Permite que a imagem aumentada seja visível */
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+  }
+ img.curiosidade-content{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+img.curiosidade-content:hover{
+    transform: scale(1.05);
+  }
+  
+  
+  .curiosidade-item p {
+    font-size: 1rem;
+    color: #555;
+    padding: 0.5rem;
+  }
+  
+  .curiosidade-item i {
+    font-size: 2rem;
+    color: #4caf50;
+    margin-bottom: 0.5rem;
+ }
+  .curiosidade-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .curiosidade-item img  {
+    width: 100%;
+    height: auto; /* Ajusta a altura proporcionalmente à largura */
+    object-fit: contain; /* Garante que a imagem completa seja exibida */
+    transition: transform 0.3s ease; /* Transição suave para o zoom */
+  }
+  
+  .curiosidade-item:hover img {
+    transform: scale(1.05); /* Aumenta o tamanho da imagem ao passar o mouse */
+  }
+  
+  .curiosidade-content {
+    padding: 1rem;
+  }
+  
+  .curiosidade-content i {
+    font-size: 2rem;
+    color: #4caf50;
+    margin-bottom: 0.5rem;
+  }
+  
+  .curiosidade-content p {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  /* Call to action */
+  .cta {
+    background-color: #a5d6a7;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .cta h2 {
+    color: #1b5e20;
+  }
+  
+  .cta p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+  
+  /* Footer */
+  footer {
+    background: #2e7d32;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+    font-weight: bold;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .gallery img {
+      width: 100%;
+    }
+  }
+  /* Responsabilidade Ambiental */
+.responsabilidade {
+    margin-top: 4rem;
+    padding: 2rem 1rem;
+    background-color: #e0f2f1;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  }
+  
+  .responsabilidade h2 {
+    text-align: center;
+    color: #00695c;
+    margin-bottom: 1rem;
+  }
+  
+  .responsabilidade p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+    font-size: 1.1rem;
+    color: #444;
+  }
+  
+  .responsabilidade-itens {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .responsabilidade-itens .item {
+    background-color: #ffffffcc;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+  }
+  
+  .responsabilidade-itens .item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .responsabilidade-itens .item i {
+    font-size: 2rem;
+    color: #00796b;
+    margin-bottom: 0.5rem;
+  }
+  /* GTI e Meio Ambiente */
+.gti {
+    margin-top: 4rem;
+    padding: 2rem 1rem;
+    background-color: #e3f2fd;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  }
+  
+  .gti h2 {
+    text-align: center;
+    color: #0d47a1;
+    margin-bottom: 1rem;
+  }
+  
+  .gti p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+    font-size: 1.1rem;
+    color: #444;
+  }
+  
+  .gti-beneficios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .gti-beneficios .beneficio {
+    background-color: #ffffffcc;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+  }
+  
+  .gti-beneficios .beneficio:hover {
+    transform: translateY(-5px);
+  }
+  
+  .gti-beneficios .beneficio i {
+    font-size: 2rem;
+    color: #1565c0;
+    margin-bottom: 0.5rem;
+  }
+  /* Linha do Tempo */
+.linha-do-tempo {
+    margin-top: 4rem;
+    padding: 2rem 1rem;
+    background-color: #f1f8e9;
+    border-radius: 12px;
+  }
+  
+  .linha-do-tempo h2 {
+    text-align: center;
+    color: #33691e;
+    margin-bottom: 2rem;
+  }
+  
+  .timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-left: 2px;
+  }
+  
+  .evento {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  .evento.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  
+  .evento .conteudo h3 {
+    color: #558b2f;
+    margin-bottom: 0.5rem;
+  }
+  
+  .evento .conteudo p {
+    color: #444;
+    font-size: 1rem;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  /* Infográfico - Ciclo da Sustentabilidade */
+.infografico {
+    margin-top: 4rem;
+    padding: 2rem 1rem;
+    background-color: #e8f5e9;
+    border-radius: 12px;
+  }
+  
+  .infografico h2 {
+    text-align: center;
+    color: #2e7d32;
+    margin-bottom: 2rem;
+  }
+  
+  .ciclo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    text-align: center;
+  }
+  
+  .etapa {
+    background-color: #ffffffcc;
+    border-radius: 10px;
+    padding: 1.5rem;
+    width: 280px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+  }
+  
+  .etapa:hover {
+    transform: scale(1.05);
+  }
+  
+  .etapa i {
+    font-size: 2.5rem;
+    color: #388e3c;
+    margin-bottom: 1rem;
+  }
+  
+  .etapa h3 {
+    margin-bottom: 0.5rem;
+    color: #2e7d32;
+  }
+  
+  .etapa p {
+    color: #555;
+    font-size: 1rem;
+  }
